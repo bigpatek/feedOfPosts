@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useFetching } from "../hooks/useFetching";
 import PostService from "../API/PostService";
 import Loader from "../components/UI/Loader/Loader";
-import PostList from "../components/PostList";
 
 const PostIdPage = () => {
 
