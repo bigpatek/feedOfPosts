@@ -8,8 +8,8 @@ const PostFilter = ({filter, setFilter}) => {
         <div>
         <MyInput type={"text"} placeholder={"поиск по названию поста"} value={filter.query} 
         onChange={(e)=> setFilter({...filter, query: e.target.value}) }/>
-        <MySelect value={filter.sort} onChange={selectedSort => setFilter({...filter, sort: selectedSort})} defaulValue={"Сортировать"} 
-        option={[{value:"title", name:"По названию"}, {value:"body", name:"По описанию"}]}/>
+        <MySelect value={filter.sort} onChange={selectedSort => setFilter({...filter, sort: selectedSort})} defaultValue={"Сортировать"} 
+        options={[{value:"title", name:"По названию"}, {value:"body", name:"По описанию"}]}/>
       </div>
     )
 }
